@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         var etName=findViewById<EditText>(R.id.etName)
         var btnWish=findViewById<Button>(R.id.btnWish)
-        var text=etName.text.toString()
+        val text=etName.text.toString()
 
         btnWish.setOnClickListener {
             val intent= Intent(this,WishingScreen::class.java)
